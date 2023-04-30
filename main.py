@@ -41,7 +41,7 @@ if typeSearch == "T" :
 elif typeSearch== "C":
     print("Content it is")
 else:
-    typeKeywords = "B"
+    typeSearch = "B"
     print("Both it is then")
 
 
