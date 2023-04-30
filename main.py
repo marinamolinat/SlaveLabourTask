@@ -116,7 +116,8 @@ else:
                     ##Search trough replies and add users who commented
                     if UserWhoCommented:
                         for comment in post.comments:
-                            if comment.author not in UserCommented and comment.author not in usernames:
+                            if comment.author not in UserCommented and comment.author not in usernames and comment.author is not None:
+
                                 UserCommented.append(comment.author.name)
 
                     break
@@ -155,14 +156,5 @@ for i in UserCommented:
 print("Message sent to usernames who commented ")
 
 print("Job done :))")
-
-
-
-
-
-
-
-
-
 
 
